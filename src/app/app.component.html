@@ -1,0 +1,20 @@
+<div class="content">
+
+  <div class="card-container">
+    <label>Country</label>
+    <select placeholder="Country" [(ngModel)]="selectedCountry" (change)="changeCity($event)">
+      <option>--Choose Country--</option>
+      <option *ngFor="let country of Countries">{{country.name}}</option>
+    </select>
+  </div>
+
+
+
+  <div class="card-container">
+    <label>City</label>
+    <select placeholder="City" [(ngModel)]='selectedCity'>
+      <option>--Choose City--</option>
+      <option *ngFor="let city of cities">{{city}}</option>
+    </select>
+  </div>
+</div>
